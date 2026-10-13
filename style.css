@@ -1,10 +1,5 @@
-/* ==========================================================================
-   LUNAR — POLISHED 2.5D DEVELOPER PORTFOLIO
-   Features: Silky Smooth Card 3D Tilt, Specular Spotlight, Moonlight Aesthetic
-   ========================================================================== */
-
 :root {
-  /* Obsidian & Lunar Surface Palette */
+  
   --bg: #06070a;
   --bg-subtle: #0a0d14;
   --surface: #0f131d;
@@ -20,7 +15,7 @@
   --text-muted: #64748b;
   --text-faint: #334155;
 
-  /* Moonlight Cyan & Silver Accents */
+  
   --cyan: #38bdf8;
   --cyan-light: #7dd3fc;
   --cyan-glow: rgba(56, 189, 248, 0.15);
@@ -32,14 +27,13 @@
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  /* 2.5D Layered Elevation Shadows */
+  
   --shadow-flat: 0 4px 16px -2px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.06);
   --shadow-tilt-hover: 0 20px 45px -10px rgba(0, 0, 0, 0.85), 0 0 24px -2px rgba(56, 189, 248, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.18);
   
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Base Reset */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -73,7 +67,6 @@ a {
   text-decoration: none;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -88,7 +81,6 @@ a {
   background: #243048;
 }
 
-/* Peak 2D Lunar Atmosphere Canvas */
 #ambient-canvas {
   position: fixed;
   top: 0;
@@ -99,8 +91,6 @@ a {
   z-index: 0;
 }
 
-
-/* Top Progress Bar */
 #scroll-progress {
   position: fixed;
   top: 0;
@@ -113,7 +103,6 @@ a {
   transition: width 35ms linear;
 }
 
-/* Layout Container */
 .container {
   width: 100%;
   max-width: 900px;
@@ -123,9 +112,6 @@ a {
   z-index: 2;
 }
 
-/* ==========================================================================
-   FLOATING CAPSULE NAVBAR
-   ========================================================================== */
 .nav-wrapper {
   position: fixed;
   top: 16px;
@@ -242,7 +228,6 @@ a {
   font-size: 0.68rem;
 }
 
-/* Mobile Nav Toggle */
 .mobile-nav-toggle {
   display: none;
   background: transparent;
@@ -298,7 +283,6 @@ a {
   background-color: var(--surface-hover);
 }
 
-/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -353,7 +337,6 @@ a {
   border-radius: 999px;
 }
 
-/* Sections */
 .section {
   padding: 96px 0;
   position: relative;
@@ -394,7 +377,6 @@ a {
   margin-bottom: 32px;
 }
 
-/* 1. Hero Section */
 .hero-section {
   min-height: 90vh;
   display: flex;
@@ -459,9 +441,6 @@ a {
   flex-wrap: wrap;
 }
 
-/* =========================================================
-   2.5D CARDS WITH SILKY SMOOTH TILT & SPOTLIGHT
-   ========================================================= */
 .card-25d {
   position: relative;
   background: var(--surface-card);
@@ -469,7 +448,7 @@ a {
   border-radius: 12px;
   padding: 28px;
   box-shadow: var(--shadow-flat);
-  /* Smooth 2.5D hardware acceleration & depth */
+  
   transform-style: preserve-3d;
   perspective: 1000px;
   transition: transform 140ms ease-out, 
@@ -480,7 +459,6 @@ a {
   will-change: transform;
 }
 
-/* Subtle inner element floating layer */
 .card-25d .card-top,
 .card-25d .badge,
 .card-25d .card-title-group {
@@ -488,7 +466,6 @@ a {
   will-change: transform;
 }
 
-/* Specular mouse spotlight following cursor */
 .card-25d::before {
   content: "";
   position: absolute;
@@ -508,7 +485,6 @@ a {
   opacity: 1;
 }
 
-/* 2.5D Top-Edge Specular Inset Highlight */
 .card-25d::after {
   content: "";
   position: absolute;
@@ -525,13 +501,11 @@ a {
   opacity: 1;
 }
 
-/* Hover Border & Elevation */
 .card-25d:hover {
   border-color: var(--border-glow);
   box-shadow: var(--shadow-tilt-hover);
 }
 
-/* 2. About */
 .about-box {
   background: var(--surface-card);
   border: 1px solid var(--border-subtle);
@@ -563,7 +537,6 @@ a {
   font-weight: 500;
 }
 
-/* 3. Projects */
 .project-filters {
   display: flex;
   gap: 8px;
@@ -683,7 +656,6 @@ a {
   gap: 8px;
 }
 
-/* Status Badges */
 .badge {
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -712,7 +684,6 @@ a {
   border: 1px solid rgba(168, 85, 247, 0.3);
 }
 
-/* 4. Skills */
 .skills-note {
   font-family: var(--font-mono);
   font-size: 0.8rem;
@@ -766,7 +737,6 @@ a {
   box-shadow: 0 0 6px var(--cyan);
 }
 
-/* 5. Currently Learning */
 .learning-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -798,7 +768,6 @@ a {
   line-height: 1.55;
 }
 
-/* 6. Principles */
 .principles-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -830,7 +799,6 @@ a {
   line-height: 1.5;
 }
 
-/* 7. Contact */
 .contact-container {
   background: var(--surface-card);
   border: 1px solid var(--border-subtle);
@@ -906,7 +874,6 @@ a {
   color: var(--cyan);
 }
 
-/* Footer */
 .footer {
   border-top: 1px solid var(--border-subtle);
   padding: 36px 0;
@@ -926,7 +893,6 @@ a {
   color: var(--text-primary);
 }
 
-/* Command Palette Modal (CMD+K) */
 .cmd-modal-backdrop {
   position: fixed;
   inset: 0;
@@ -1015,7 +981,6 @@ a {
   color: var(--text-muted);
 }
 
-/* Toast */
 #toast {
   position: fixed;
   bottom: 24px;
@@ -1040,7 +1005,6 @@ a {
   transform: translateY(0);
 }
 
-/* Fluid Scroll Reveals */
 .reveal {
   opacity: 0;
   transform: translateY(14px);
@@ -1053,7 +1017,6 @@ a {
   transform: translateY(0);
 }
 
-/* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -1062,9 +1025,6 @@ a {
   }
 }
 
-/* =========================================================
-   RESPONSIVE DESIGN (TABLET & MOBILE OPTIMIZATIONS)
-   ========================================================= */
 @media (max-width: 820px) {
   .nav-links {
     display: none;
@@ -1097,7 +1057,7 @@ a {
 
 @media (max-width: 580px) {
   .cmd-k-btn {
-    display: none; /* Hide keyboard shortcut search on mobile */
+    display: none; 
   }
 
   .hero-name {
@@ -1160,7 +1120,6 @@ a {
   }
 }
 
-/* Touch screen adjustments */
 @media (hover: none) {
   .card-25d:hover {
     transform: none;
