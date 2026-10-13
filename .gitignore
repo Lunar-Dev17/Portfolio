@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor & IDE artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / package caches (if any)
+node_modules/
+.npm/
+
+# Local build / logs
+*.log

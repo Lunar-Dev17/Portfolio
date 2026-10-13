@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lunar — AI Systems &amp; Software Developer</title>
+  <meta name="description" content="Personal portfolio of Lunar, AI Systems & Software Developer. Building practical AI tools, workflow automations, and web projects.">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Peak Ambient Lunar Atmosphere Canvas (Zero 3D - Fluid 2D Cosmic Grid & Stars) -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Floating Capsule Navbar -->
+  <div class="nav-wrapper">
+    <header class="nav-capsule">
+      <a href="#hero" class="brand" aria-label="Lunar Home">
+        <span class="moon-beacon"></span>
+        <span>Lunar</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#learning" class="nav-link">Learning</a>
+        <a href="#approach" class="nav-link">Approach</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cmd-k-btn" id="open-cmd-btn" aria-label="Open Command Menu">
+          <span>Search</span>
+          <kbd class="cmd-k-badge">Ctrl K</kbd>
+        </button>
+        <a href="https://cal.com/lunar.dev/intro-call" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+          Book Call
+        </a>
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+          &#9776;
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <div class="mobile-menu-links">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#learning" class="mobile-link">Learning</a>
+        <a href="#approach" class="mobile-link">Approach</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- =========================================================
+         1. HERO SECTION
+         ========================================================= -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-pill reveal">
+          <span class="dot"></span>
+          <span>Available for select builds &amp; automation</span>
+        </div>
+
+        <h1 class="hero-name reveal">Lunar</h1>
+        <p class="hero-role reveal">AI Systems &amp; Software Developer</p>
+        <p class="hero-intro reveal">
+          Turning ideas into functional software — focused on practical AI systems, automated workflows, and clean web tools.
+        </p>
+
+        <div class="hero-buttons reveal">
+          <a href="#projects" class="btn btn-primary">View Projects &rarr;</a>
+          <button class="btn btn-secondary" id="hero-copy-btn">Copy Email</button>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         2. ABOUT SECTION
+         ========================================================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-tag reveal">About</div>
+        <h2 class="section-title reveal">Who I Am</h2>
+
+        <div class="about-box card-25d reveal" style="margin-top: 18px;">
+          <p class="lead">
+            I'm a developer and builder who enjoys turning ideas into functional software.
+          </p>
+          <p>
+            I'm interested in AI, automation, APIs, and creating practical tools that solve real problems. I learn by experimenting, building, testing, and iterating.
+          </p>
+          <p>
+            I care about functionality, reliability, thoughtful design, and software that serves a real purpose.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. SELECTED PUBLIC PROJECTS
+         ========================================================= -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-tag reveal">Selected Work</div>
+        <h2 class="section-title reveal">Public Projects</h2>
+        <p class="section-desc reveal">Active studio projects, integration tools, and software experiments.</p>
+
+        <!-- Category Filters -->
+        <div class="project-filters reveal">
+          <button class="filter-btn active" data-filter="all">All (4)</button>
+          <button class="filter-btn" data-filter="live">Live (1)</button>
+          <button class="filter-btn" data-filter="experiment">Experiments (1)</button>
+          <button class="filter-btn" data-filter="progress">In Progress (2)</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- VEXONS -->
+          <article class="card-25d project-card reveal" data-category="live">
+            <div>
+              <div class="card-top">
+                <div class="card-title-group">
+                  <h3>VEXONS</h3>
+                  <span class="card-subtitle">Digital Studio</span>
+                </div>
+                <span class="badge badge-live">Live</span>
+              </div>
+              <p class="card-desc">
+                A digital studio focused on polished websites and digital experiences. Design direction: dark, minimal, premium, responsive, smooth purposeful animation.
+              </p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-tags">
+                <span>Digital Studio</span>
+                <span>Minimal</span>
+                <span>Web Experiences</span>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/vexons.studios/" target="_blank" rel="noopener noreferrer" class="card-link">
+                  Instagram &rarr;
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Workflow Automation -->
+          <article class="card-25d project-card reveal" data-category="progress">
+            <div>
+              <div class="card-top">
+                <div class="card-title-group">
+                  <h3>Workflow Automation</h3>
+                  <span class="card-subtitle">System Integration</span>
+                </div>
+                <span class="badge badge-progress">In progress</span>
+              </div>
+              <p class="card-desc">
+                Exploring automation that connects services and reduces repetitive work using workflow tools, APIs, webhooks, email, and spreadsheets.
+              </p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-tags">
+                <span>APIs</span>
+                <span>Webhooks</span>
+                <span>Email</span>
+                <span>Sheets</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Software Experiments -->
+          <article class="card-25d project-card reveal" data-category="experiment">
+            <div>
+              <div class="card-top">
+                <div class="card-title-group">
+                  <h3>Software Experiments</h3>
+                  <span class="card-subtitle">Utilities &amp; Tools</span>
+                </div>
+                <span class="badge badge-experiment">Experiment</span>
+              </div>
+              <p class="card-desc">
+                Practical utilities, custom interfaces, and AI-powered tools built to test targeted problem spaces and validate workflows.
+              </p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-tags">
+                <span>AI Tools</span>
+                <span>Desktop</span>
+                <span>Custom UI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Web Development -->
+          <article class="card-25d project-card reveal" data-category="progress">
+            <div>
+              <div class="card-top">
+                <div class="card-title-group">
+                  <h3>Web Development</h3>
+                  <span class="card-subtitle">Modern Interfaces</span>
+                </div>
+                <span class="badge badge-progress">In progress</span>
+              </div>
+              <p class="card-desc">
+                Learning and experimenting with website design, responsive layouts, and interactive experiences.
+              </p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-tags">
+                <span>Frontend</span>
+                <span>Responsive</span>
+                <span>Clean UI</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. SKILLS & TECHNOLOGIES
+         ========================================================= -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-tag reveal">Stack</div>
+        <h2 class="section-title reveal">Skills &amp; Technologies</h2>
+        <p class="skills-note reveal">
+          These are areas of interest and learning, not claims of expertise in every technology.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-col card-25d reveal">
+            <h3>AI &amp; Automation</h3>
+            <ul>
+              <li>AI and AI agents/integrations</li>
+              <li>Workflow automation</li>
+              <li>APIs, webhooks &amp; JSON</li>
+            </ul>
+          </div>
+
+          <div class="skill-col card-25d reveal">
+            <h3>Software &amp; Tools</h3>
+            <ul>
+              <li>Python</li>
+              <li>Git &amp; GitHub</li>
+              <li>Custom software tools &amp; desktop apps</li>
+              <li>Testing &amp; debugging</li>
+            </ul>
+          </div>
+
+          <div class="skill-col card-25d reveal">
+            <h3>Web &amp; Design</h3>
+            <ul>
+              <li>Web development</li>
+              <li>UI/UX design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. CURRENTLY LEARNING
+         ========================================================= -->
+    <section id="learning" class="section">
+      <div class="container">
+        <div class="section-tag reveal">Focus</div>
+        <h2 class="section-title reveal">Currently Learning</h2>
+        <p class="section-desc reveal">Active areas of curiosity and practical study drawn from core interests.</p>
+
+        <div class="learning-list">
+          <div class="learning-card card-25d reveal">
+            <span class="learning-dot">&bull;</span>
+            <div>
+              <h4>Autonomous AI Agent Architectures</h4>
+              <p>Studying multi-step tool calling, structured prompt flows, and deterministic error handling.</p>
+            </div>
+          </div>
+
+          <div class="learning-card card-25d reveal">
+            <span class="learning-dot">&bull;</span>
+            <div>
+              <h4>Event-Driven Webhook Pipelines</h4>
+              <p>Connecting web services, handling real-time events, and error-tolerant data syncing.</p>
+            </div>
+          </div>
+
+          <div class="learning-card card-25d reveal">
+            <span class="learning-dot">&bull;</span>
+            <div>
+              <h4>Python Scripting &amp; Automation</h4>
+              <p>Building faster automation scripts, local productivity tools, and lightweight APIs.</p>
+            </div>
+          </div>
+
+          <div class="learning-card card-25d reveal">
+            <span class="learning-dot">&bull;</span>
+            <div>
+              <h4>Frontend Performance &amp; Clean UI</h4>
+              <p>Designing responsive, high-fps web layouts that load instantaneously and feel sharp.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. DEVELOPMENT APPROACH (PRINCIPLES)
+         ========================================================= -->
+    <section id="approach" class="section">
+      <div class="container">
+        <div class="section-tag reveal">Philosophy</div>
+        <h2 class="section-title reveal">Development Approach</h2>
+        <p class="section-desc reveal">Guiding principles practiced to produce durable, honest software.</p>
+
+        <div class="principles-grid">
+          <div class="principle-card card-25d reveal">
+            <span class="p-number">01</span>
+            <h4>Build practical solutions over impressive-looking ones</h4>
+            <p>Solving a real problem always beats building unnecessary complexity.</p>
+          </div>
+
+          <div class="principle-card card-25d reveal">
+            <span class="p-number">02</span>
+            <h4>Prioritize functionality and reliability</h4>
+            <p>A tool must run predictably. Reliability comes before extra features.</p>
+          </div>
+
+          <div class="principle-card card-25d reveal">
+            <span class="p-number">03</span>
+            <h4>Keep interfaces clean and intuitive</h4>
+            <p>Make things straightforward to use without cognitive friction.</p>
+          </div>
+
+          <div class="principle-card card-25d reveal">
+            <span class="p-number">04</span>
+            <h4>Test, debug, and iterate</h4>
+            <p>Catch edge cases methodically. Rapid iteration loops produce durable software.</p>
+          </div>
+
+          <div class="principle-card card-25d reveal">
+            <span class="p-number">05</span>
+            <h4>Write understandable, maintainable code</h4>
+            <p>Clear, readable logic always beats fragile, clever shortcuts.</p>
+          </div>
+
+          <div class="principle-card card-25d reveal">
+            <span class="p-number">06</span>
+            <h4>Be honest about experience</h4>
+            <p>Represent skills clearly and accurately, without inflated claims.</p>
+          </div>
+
+          <div class="principle-card card-25d reveal">
+            <span class="p-number">07</span>
+            <h4>Focus on real work over buzzwords</h4>
+            <p>Spend energy building tools that function rather than talking in marketing jargon.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. CONTACT & LINKS
+         ========================================================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-container card-25d reveal">
+          <div class="contact-left">
+            <div class="section-tag">Direct Access</div>
+            <h3>Let's Connect</h3>
+            <p>
+              Have a workflow you want automated, a project to build, or want to discuss AI integrations?
+            </p>
+            <a href="https://cal.com/lunar.dev/intro-call" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Book an intro call &rarr;
+            </a>
+          </div>
+
+          <div class="contact-links-list">
+            <div class="contact-link-row" id="contact-email-row" title="Click to copy email">
+              <div>
+                <div class="row-label">Email</div>
+                <div class="row-val">lunar.dev01@gmail.com</div>
+              </div>
+              <span class="row-action">Copy</span>
+            </div>
+
+            <a href="https://github.com/Lunar-Dev17" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+              <div>
+                <div class="row-label">GitHub</div>
+                <div class="row-val">github.com/Lunar-Dev17</div>
+              </div>
+              <span class="row-action">&rarr;</span>
+            </a>
+
+            <a href="https://www.instagram.com/vexons.studios/" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+              <div>
+                <div class="row-label">VEXONS Studio</div>
+                <div class="row-val">@vexons.studios</div>
+              </div>
+              <span class="row-action">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-row">
+      <span>&copy; 2026 Lunar. AI Systems &amp; Software Developer.</span>
+      <a href="#hero">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- Command Palette Modal (Ctrl+K) -->
+  <div class="cmd-modal-backdrop" id="cmd-modal">
+    <div class="cmd-modal" role="dialog" aria-modal="true">
+      <div class="cmd-input-wrapper">
+        <input type="text" class="cmd-input" id="cmd-input" placeholder="Type a command or jump to section..." autocomplete="off">
+      </div>
+      <ul class="cmd-list" id="cmd-list">
+        <li class="cmd-item selected" data-action="goto" data-target="#projects">
+          <span>Go to Projects</span>
+          <span class="cmd-item-shortcut">P</span>
+        </li>
+        <li class="cmd-item" data-action="goto" data-target="#about">
+          <span>Go to About</span>
+          <span class="cmd-item-shortcut">A</span>
+        </li>
+        <li class="cmd-item" data-action="goto" data-target="#skills">
+          <span>Go to Skills</span>
+          <span class="cmd-item-shortcut">S</span>
+        </li>
+        <li class="cmd-item" data-action="goto" data-target="#approach">
+          <span>Go to Approach</span>
+          <span class="cmd-item-shortcut">O</span>
+        </li>
+        <li class="cmd-item" data-action="copy-email">
+          <span>Copy Email Address</span>
+          <span class="cmd-item-shortcut">E</span>
+        </li>
+        <li class="cmd-item" data-action="link" data-url="https://cal.com/lunar.dev/intro-call">
+          <span>Book an Intro Call (Cal.com)</span>
+          <span class="cmd-item-shortcut">C</span>
+        </li>
+        <li class="cmd-item" data-action="link" data-url="https://github.com/Lunar-Dev17">
+          <span>Open GitHub Profile</span>
+          <span class="cmd-item-shortcut">G</span>
+        </li>
+        <li class="cmd-item" data-action="link" data-url="https://www.instagram.com/vexons.studios/">
+          <span>Open VEXONS Instagram</span>
+          <span class="cmd-item-shortcut">I</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <!-- =========================================================
+       PEAK 2D LUNAR ATMOSPHERE CANVAS & INTERACTIVE CLIENT ENGINE
+       Features:
+       - Technical Grid with Cursor Flashlight Illumination
+       - Breathing Harmonic Aurora Gradient Glow
+       - Twinkling Celestial Starfield + Floating Dust Motes
+       - Occasional Meteor Streaks (Shooting Stars)
+       - 2.5D Subtle Card Tilt with Specular Mouse Spotlight
+       ========================================================= -->
+  <script>
+    (function () {
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      // =========================================================
+      // INTERACTIVE LUNAR CONSTELLATION NETWORK
+      // =========================================================
+      const canvas = document.getElementById("ambient-canvas");
+      if (canvas) {
+        const ctx = canvas.getContext("2d");
+        let width = canvas.width = window.innerWidth;
+        let height = canvas.height = window.innerHeight;
+
+        let mouseX = -1000;
+        let mouseY = -1000;
+
+        function onResize() {
+          width = canvas.width = window.innerWidth;
+          height = canvas.height = window.innerHeight;
+        }
+        window.addEventListener("resize", onResize);
+
+        window.addEventListener("mousemove", (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+        }, { passive: true });
+
+        window.addEventListener("mouseleave", () => {
+          mouseX = -1000;
+          mouseY = -1000;
+        });
+
+        const nodeCount = 45;
+        const nodes = [];
+        for (let i = 0; i < nodeCount; i++) {
+          nodes.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            vx: (Math.random() - 0.5) * 0.4,
+            vy: (Math.random() - 0.5) * 0.4,
+            r: Math.random() * 1.5 + 0.8
+          });
+        }
+
+        const maxConnectDist = 125;
+        const mouseConnectDist = 150;
+
+        function renderConstellations() {
+          ctx.clearRect(0, 0, width, height);
+
+          // Update & draw nodes
+          for (let i = 0; i < nodeCount; i++) {
+            const n = nodes[i];
+            n.x += n.vx;
+            n.y += n.vy;
+
+            // Bounce / wrap around edges
+            if (n.x < 0) n.x = width;
+            if (n.x > width) n.x = 0;
+            if (n.y < 0) n.y = height;
+            if (n.y > height) n.y = 0;
+
+            // Draw star node
+            ctx.beginPath();
+            ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+            ctx.fillStyle = "rgba(56, 189, 248, 0.45)";
+            ctx.fill();
+
+            // Inter-node constellation links
+            for (let j = i + 1; j < nodeCount; j++) {
+              const n2 = nodes[j];
+              const dx = n.x - n2.x;
+              const dy = n.y - n2.y;
+              const dist = Math.hypot(dx, dy);
+
+              if (dist < maxConnectDist) {
+                const alpha = (1 - dist / maxConnectDist) * 0.18;
+                ctx.beginPath();
+                ctx.moveTo(n.x, n.y);
+                ctx.lineTo(n2.x, n2.y);
+                ctx.strokeStyle = `rgba(56, 189, 248, ${alpha})`;
+                ctx.lineWidth = 0.9;
+                ctx.stroke();
+              }
+            }
+
+            // Interactive mouse constellation connections
+            if (mouseX > 0 && mouseY > 0) {
+              const mdx = n.x - mouseX;
+              const mdy = n.y - mouseY;
+              const mDist = Math.hypot(mdx, mdy);
+
+              if (mDist < mouseConnectDist) {
+                const mAlpha = (1 - mDist / mouseConnectDist) * 0.35;
+                ctx.beginPath();
+                ctx.moveTo(n.x, n.y);
+                ctx.lineTo(mouseX, mouseY);
+                ctx.strokeStyle = `rgba(56, 189, 248, ${mAlpha})`;
+                ctx.lineWidth = 1;
+                ctx.stroke();
+              }
+            }
+          }
+
+          requestAnimationFrame(renderConstellations);
+        }
+
+        requestAnimationFrame(renderConstellations);
+      }
+
+      // =========================================================
+      // 2. 2.5D SILKY SMOOTH CARD TILT HOVER
+      // =========================================================
+      if (!prefersReducedMotion) {
+        const tiltCards = document.querySelectorAll(".card-25d, .about-box, .contact-container");
+
+        tiltCards.forEach(card => {
+          let bounds = null;
+
+          card.addEventListener("mouseenter", () => {
+            bounds = card.getBoundingClientRect();
+          });
+
+          card.addEventListener("mousemove", (e) => {
+            if (!bounds) bounds = card.getBoundingClientRect();
+            const x = e.clientX - bounds.left;
+            const y = e.clientY - bounds.top;
+
+            // Specular spotlight coordinates
+            card.style.setProperty("--mx", x + "px");
+            card.style.setProperty("--my", y + "px");
+
+            // Calculate subtle tilt angle (-3.5 deg to +3.5 deg max)
+            const centerX = bounds.width / 2;
+            const centerY = bounds.height / 2;
+            const deltaX = (x - centerX) / centerX;
+            const deltaY = (y - centerY) / centerY;
+
+            const rotateX = (-deltaY * 3.5).toFixed(2);
+            const rotateY = (deltaX * 3.5).toFixed(2);
+
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+          });
+
+          card.addEventListener("mouseleave", () => {
+            bounds = null;
+            card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)";
+          });
+        });
+      }
+
+      // =========================================================
+      // 3. SCROLL PROGRESS BAR & SCROLLSPY
+      // =========================================================
+      const progress = document.getElementById("scroll-progress");
+      const navLinks = document.querySelectorAll(".nav-link, .mobile-link");
+      const sections = document.querySelectorAll("section[id]");
+
+      window.addEventListener("scroll", () => {
+        const total = document.documentElement.scrollHeight - window.innerHeight;
+        if (progress && total > 0) {
+          progress.style.width = (window.scrollY / total * 100) + "%";
+        }
+      }, { passive: true });
+
+      if ("IntersectionObserver" in window) {
+        const spyObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const id = entry.target.getAttribute("id");
+              navLinks.forEach(link => {
+                link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+              });
+            }
+          });
+        }, { rootMargin: "-25% 0px -65% 0px" });
+
+        sections.forEach(s => spyObserver.observe(s));
+      }
+
+      // =========================================================
+      // 4. FLUID 2D SCROLL REVEALS
+      // =========================================================
+      if ("IntersectionObserver" in window) {
+        const revealObserver = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
+      } else {
+        document.querySelectorAll(".reveal").forEach(el => el.classList.add("visible"));
+      }
+
+      // =========================================================
+      // 5. MOBILE MENU DRAWER
+      // =========================================================
+      const mobileToggle = document.getElementById("mobile-toggle");
+      const mobileDrawer = document.getElementById("mobile-drawer");
+      const mobileLinks = document.querySelectorAll(".mobile-link");
+
+      if (mobileToggle && mobileDrawer) {
+        mobileToggle.addEventListener("click", () => {
+          mobileDrawer.classList.toggle("open");
+        });
+
+        mobileLinks.forEach(l => {
+          l.addEventListener("click", () => mobileDrawer.classList.remove("open"));
+        });
+      }
+
+      // =========================================================
+      // 6. PROJECT CATEGORY FILTERS
+      // =========================================================
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const projectCards = document.querySelectorAll(".project-card");
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          filterBtns.forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const filter = btn.dataset.filter;
+          projectCards.forEach(card => {
+            if (filter === "all" || card.dataset.category === filter) {
+              card.style.display = "flex";
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
+
+      // =========================================================
+      // 7. TOAST NOTIFICATION & COPY EMAIL
+      // =========================================================
+      const toast = document.getElementById("toast");
+      let toastTimer = null;
+      function showToast(text) {
+        toast.textContent = text;
+        toast.classList.add("visible");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toast.classList.remove("visible"), 2500);
+      }
+
+      function copyEmailAction() {
+        navigator.clipboard.writeText("lunar.dev01@gmail.com").then(() => {
+          showToast("Copied lunar.dev01@gmail.com to clipboard!");
+        });
+      }
+
+      document.getElementById("hero-copy-btn")?.addEventListener("click", copyEmailAction);
+      document.getElementById("contact-email-row")?.addEventListener("click", copyEmailAction);
+
+      // =========================================================
+      // 8. COMMAND PALETTE (CTRL+K / CMD+K)
+      // =========================================================
+      const cmdModal = document.getElementById("cmd-modal");
+      const cmdInput = document.getElementById("cmd-input");
+      const openCmdBtn = document.getElementById("open-cmd-btn");
+      const cmdItems = document.querySelectorAll(".cmd-item");
+      let selectedIndex = 0;
+
+      function openCmd() {
+        cmdModal.classList.add("open");
+        cmdInput.value = "";
+        cmdInput.focus();
+        selectedIndex = 0;
+        updateSelection();
+      }
+
+      function closeCmd() {
+        cmdModal.classList.remove("open");
+      }
+
+      function updateSelection() {
+        const visibleItems = Array.from(cmdItems).filter(item => item.style.display !== "none");
+        visibleItems.forEach((item, idx) => {
+          item.classList.toggle("selected", idx === selectedIndex);
+        });
+      }
+
+      openCmdBtn?.addEventListener("click", openCmd);
+
+      cmdModal?.addEventListener("click", (e) => {
+        if (e.target === cmdModal) closeCmd();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+          e.preventDefault();
+          if (cmdModal.classList.contains("open")) {
+            closeCmd();
+          } else {
+            openCmd();
+          }
+        }
+        if (e.key === "Escape" && cmdModal.classList.contains("open")) {
+          closeCmd();
+        }
+
+        // Arrow Key Navigation in Command Palette
+        if (cmdModal.classList.contains("open")) {
+          const visibleItems = Array.from(cmdItems).filter(item => item.style.display !== "none");
+          if (e.key === "ArrowDown") {
+            e.preventDefault();
+            selectedIndex = (selectedIndex + 1) % visibleItems.length;
+            updateSelection();
+          } else if (e.key === "ArrowUp") {
+            e.preventDefault();
+            selectedIndex = (selectedIndex - 1 + visibleItems.length) % visibleItems.length;
+            updateSelection();
+          } else if (e.key === "Enter" && visibleItems[selectedIndex]) {
+            e.preventDefault();
+            executeCmd(visibleItems[selectedIndex]);
+          }
+        }
+      });
+
+      cmdInput?.addEventListener("input", (e) => {
+        const val = e.target.value.toLowerCase();
+        cmdItems.forEach(item => {
+          const match = item.textContent.toLowerCase().includes(val);
+          item.style.display = match ? "flex" : "none";
+        });
+        selectedIndex = 0;
+        updateSelection();
+      });
+
+      function executeCmd(item) {
+        const action = item.dataset.action;
+        closeCmd();
+        if (action === "goto") {
+          const target = document.querySelector(item.dataset.target);
+          if (target) target.scrollIntoView({ behavior: "smooth" });
+        } else if (action === "copy-email") {
+          copyEmailAction();
+        } else if (action === "link") {
+          window.open(item.dataset.url, "_blank");
+        }
+      }
+
+      cmdItems.forEach(item => {
+        item.addEventListener("click", () => executeCmd(item));
+      });
+    })();
+  </script>
+</body>
+</html>
